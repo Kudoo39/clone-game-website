@@ -9,6 +9,8 @@ interface Props {
   game: Game;
 }
 
+//gamecard width should be the same with gamecardskeleton
+
 const GameCard = ({ game }: Props) => {
   return (
     <Card width="250px" borderRadius={10} overflow="hidden">

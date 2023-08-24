@@ -5,7 +5,7 @@ import GameCardSkeleton from "./GameCardSkeleton";
 
 const GameGrid = () => {
   const { games, error, loading } = useGames();
-  const Skeletons = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  const Skeletons = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; //for column 5
 
   return (
     <>
