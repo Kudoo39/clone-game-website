@@ -8,6 +8,7 @@ NOTE: This project is still in progress
 
 - Browse and search games by genre.
 - View detailed information about each game.
+- [Live Demo](https://kudoo39.github.io/clone-game-website/)
 
 ## Technologies Used
 
