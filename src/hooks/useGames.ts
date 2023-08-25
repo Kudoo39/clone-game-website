@@ -35,7 +35,7 @@ const useGames = (selectedGenre: Genre | null) => {
       .get<FetchGames>("/games", {
         signal: controller.signal,
         params: {
-          page_size: 40,
+          genres: selectedGenre?.id,
         },
       })
       .then((res) => {
@@ -49,7 +49,7 @@ const useGames = (selectedGenre: Genre | null) => {
       });
 
     return () => controller.abort();
-  }, []);
+  }, [selectedGenre]);
 
   return { games, error, loading };
 };
