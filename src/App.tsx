@@ -14,6 +14,7 @@ const App = () => {
     null
   );
   const [sortOrder, setSortOrder] = useState<string>("");
+  const [search, setSearch] = useState<string>("");
 
   return (
     <Grid
@@ -24,7 +25,7 @@ const App = () => {
       }}
     >
       <GridItem area="nav">
-        <NavBar />
+        <NavBar onSearch={(searchText) => setSearch(searchText)} />
       </GridItem>
 
       <Show above="lg">
@@ -51,6 +52,7 @@ const App = () => {
           selectedPlatform={selectedPlatform}
           selectedGenre={selectedGenre}
           sortOrder={sortOrder}
+          search={search}
         />
       </GridItem>
     </Grid>
