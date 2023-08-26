@@ -26,7 +26,9 @@ const GenreList = ({ onSelectGenre, selectedGenre }: Props) => {
               fontSize="lg"
               variant="link"
             >
-              {genre.name}
+              {genre.name.split(" ").length === 2
+                ? genre.name.split(" ")[1]
+                : genre.name}
             </Button>
           </HStack>
         </ListItem>
