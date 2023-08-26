@@ -1,6 +1,6 @@
 # clone-game-website
 
-![Clone-game Website Screenshot](src/assets/demo.png)
+![Clone-game Website Screenshot](src/assets/new-demo.png)
 
 ## Features
 
